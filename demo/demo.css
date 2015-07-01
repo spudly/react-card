@@ -1,9 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Reenie+Beanie);
 
 .card {
-	display: block;
-	perspective: 1000px;
-	position: absolute;
+  display: block;
+  perspective: 1000px;
+  position: absolute;
 }
 
 .card-transform {
@@ -17,16 +17,16 @@
 }
 
 .card, .card-front, .card-back {
-	width: 500px;
-	height: 500px;
+  width: 500px;
+  height: 500px;
 }
 
 .card-front, .card-back {
-	backface-visibility: hidden;
+  backface-visibility: hidden;
   position: absolute;
   left: 0;
   top: 0;
-	border: 1px solid black;
+  border: 1px solid black;
 }
 
 .card-front {
@@ -39,34 +39,34 @@
 }
 
 .center-within-viewport {
-	left: 50%;
-	top: 50%;
-	margin-top: -150px;
-	margin-left: -250px;
+  left: 50%;
+  top: 50%;
+  margin-top: -150px;
+  margin-left: -250px;
 }
 
 .index-card {
-	font-family: 'Reenie Beanie', cursive;
-	color: #555;
+  font-family: 'Reenie Beanie', cursive;
+  color: #555;
 }
 
 .index-card, .index-card .card-front, .index-card .card-back {
-	width: 500px;
-	height: 300px;
+  width: 500px;
+  height: 300px;
 }
 
 .index-card .card-front, .index-card .card-back {
-	padding: 5px;
+  padding: 5px;
   background-color: #fff;
   border: 1px solid #ccc;
-	box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
 .index-card .card-front h1 {
-	font-size: 48px;
-	line-height: 300px;
-	text-align: center;
-	margin: 0;
+  font-size: 48px;
+  line-height: 300px;
+  text-align: center;
+  margin: 0;
 }
 
 .index-card .card-back {
@@ -76,13 +76,13 @@
 }
 
 .index-card .card-back h1 {
-	font-size: 32px;
-	line-height: 30px;
-	margin: 0;
+  font-size: 32px;
+  line-height: 30px;
+  margin: 0;
 }
 
 .index-card .card-back p {
-	font-size: 28px;
-	line-height: 26px;
-	margin: 0;
+  font-size: 28px;
+  line-height: 26px;
+  margin: 0;
 }
