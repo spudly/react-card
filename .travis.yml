@@ -5,9 +5,9 @@ node_js:
   - "0.10"
   - "iojs"
 before_install:
-  - npm install -g mocha browserify jshint semistandard codeclimate-test-reporter istanbul
+  - npm install -g mocha browserify jshint standard codeclimate-test-reporter istanbul
 addons:
   # code_climate:
-  #   repo_token: 
+  #   repo_token:
 after_script:
   - codeclimate < coverage/lcov.info
