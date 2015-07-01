@@ -7,7 +7,7 @@ node_js:
 before_install:
   - npm install -g mocha browserify jshint standard codeclimate-test-reporter istanbul
 addons:
-  # code_climate:
-  #   repo_token:
+  code_climate:
+    repo_token: 57ec75ebe48a96209e32a695aca0bfd5074e12c3d5b46a5bdd7dca659cb7ab0b
 after_script:
   - codeclimate < coverage/lcov.info
