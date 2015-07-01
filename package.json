@@ -23,7 +23,7 @@
   },
   "scripts": {
     "test": "istanbul cover node_modules/.bin/_mocha -- -u exports --compilers js:babel/register,jsx:babel/register",
-    "build": "browserify src/Card.jsx > lib/Card.js --extension=.js --extension=.jsx --standalone Card",
+    "build": "mkdir -p lib && browserify src/Card.jsx > lib/Card.js --extension=.js --extension=.jsx --standalone Card",
     "build:demo": "browserify demo/demo.jsx > demo/demo.js --extension=.js --extension=.jsx",
     "prepublish": "npm run build",
     "lint": "jshint src && jshint test && standard src && standard test"
