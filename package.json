@@ -1,6 +1,6 @@
 {
   "name": "react-card",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Render a card with React",
   "main": "lib/Card.js",
   "peerDependencies": {
