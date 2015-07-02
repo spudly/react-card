@@ -24,7 +24,7 @@
   "scripts": {
     "test": "istanbul cover node_modules/.bin/_mocha -- -u exports --compilers js:babel/register,jsx:babel/register",
     "build": "babel src --out-dir lib",
-    "build:demo": "browserify demo/demo.jsx > demo/demo.js --external react --extension=.js --extension=.jsx",
+    "build:demo": "browserify demo/demo.jsx > demo/demo.js --extension=.js --extension=.jsx",
     "prepublish": "npm run build",
     "lint": "jshint src && jshint test && standard src && standard test"
   },
