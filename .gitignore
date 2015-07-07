@@ -4,3 +4,4 @@ node_modules
 demo/demo.js
 npm-debug.*
 .DS_Store
+demo/demo.css
