@@ -7,7 +7,7 @@ let container = document.querySelector('#container');
 let flipped = false;
 
 function getClassName() {
-  return classnames('index-card', 'center-within-viewport', {
+  return classnames('index-card', {
     'card-flipped': flipped
   });
 }
