@@ -1,7 +1,8 @@
 coverage
 lib
 node_modules
-demo/demo.js
+demo/demo_build.js
 npm-debug.*
 .DS_Store
 demo/demo.css
+.nyc_output

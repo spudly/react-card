@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Card from '../src/Card';
 import classnames from 'classnames';
 
@@ -6,14 +7,14 @@ let container = document.querySelector('#container');
 
 let flipped = false;
 
-function getClassName() {
+function getClassName () {
   return classnames('index-card', {
     'card-flipped': flipped
   });
 }
 
-function render() {
-  React.render(
+function render () {
+  ReactDOM.render(
     <Card className={getClassName()}>
       <Card.Front>
         <h1>Ether 12:4</h1>
@@ -37,7 +38,7 @@ function render() {
 // rotate: 90, 180, 270 degrees
 
 render();
-setInterval(function() {
+setInterval(function () {
   flipped = !flipped;
-  render()
+  render();
 }, 3000);
