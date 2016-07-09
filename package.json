@@ -58,5 +58,8 @@
   "homepage": "https://github.com/spudly/react-card#readme",
   "dependencies": {
     "classnames": "^2.1.2"
-  }
+  },
+  "files": [
+    "lib"
+  ]
 }
