@@ -1,6 +1,5 @@
 {
   "name": "react-card",
-  "version": "1.0.3",
   "description": "Render a card with React",
   "main": "lib/Card.js",
   "peerDependencies": {
@@ -23,7 +22,8 @@
     "postcss-nested": "^1.0.0",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
-    "standard": "^7.1.2"
+    "standard": "^7.1.2",
+    "semantic-release": "^4.3.5"
   },
   "babel": {
     "presets": [
@@ -40,11 +40,12 @@
     "build:demo": "npm run build:demo:js && npm run build:demo:css",
     "demo": "npm run build:demo && echo 'open demo/index.html in your browser'",
     "prepublish": "npm run build",
-    "lint": "standard src && standard test"
+    "lint": "standard src && standard test",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spudly/react-card.git"
+    "url": "https://github.com/spudly/react-card.git"
   },
   "keywords": [
     "react",
