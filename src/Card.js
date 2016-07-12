@@ -1,24 +1,20 @@
-import React, {PropTypes} from 'react';
+import React, { PropTypes } from 'react';
 import classnames from 'classnames';
 import Front from './Front';
 import Back from './Back';
 
-class Card extends React.Component {
+const Card = ({ className, children }) => (
+  <div className={classnames('card', className)}>
+    <div className="card-transform">
+      {children}
+    </div>
+  </div>
+);
 
-  static propTypes = {
-    className: PropTypes.string,
-  };
-
-  render() {
-    return (
-      <div className={classnames('card', this.props.className)}>
-        <div className='card-transform'>
-          {this.props.children}
-        </div>
-      </div>
-    );
-  }
-}
+Card.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+};
 
 Card.Front = Front;
 Card.Back = Back;

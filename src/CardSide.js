@@ -1,18 +1,12 @@
-import React, {PropTypes} from 'react'
+import React, { PropTypes } from 'react';
 
-class CardSide extends React.Component {
+const CardSide = ({ className, children }) => (
+  <div className={className}>{children}</div>
+);
 
-  static propTypes = {
-    children: PropTypes.node,
-  };
+CardSide.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+};
 
-  render() {
-    return (
-      <div className={this.getClassName()}>
-        {this.props.children}
-      </div>
-    );
-  }
-}
-
-export default CardSide
+export default CardSide;

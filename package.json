@@ -19,10 +19,14 @@
     "nyc": "^7.0.0",
     "postcss-cli": "^2.5.2",
     "postcss-import": "^8.1.2",
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.10.2",
+    "eslint-plugin-jsx-a11y": "^1.5.5",
+    "eslint-plugin-react": "^5.2.2",
     "postcss-nested": "^1.0.0",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
-    "standard": "^7.1.2",
     "semantic-release": "^4.3.5"
   },
   "babel": {
@@ -33,14 +37,14 @@
     ]
   },
   "scripts": {
-    "test": "nyc --require babel-register mocha -u exports",
+    "test": "npm run lint && nyc --require babel-register mocha -u exports",
     "build": "babel src --out-dir lib",
     "build:demo:js": "browserify -t [ babelify --presets [ es2015 react stage-0 ] ] demo/demo.js > demo/demo_build.js",
     "build:demo:css": "postcss -u postcss-import -u postcss-nested -u cssnext -o demo/demo.css demo/demo.postcss",
     "build:demo": "npm run build:demo:js && npm run build:demo:css",
     "demo": "npm run build:demo && echo 'open demo/index.html in your browser'",
     "prepublish": "npm run build",
-    "lint": "standard src && standard test",
+    "lint": "eslint src test",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -62,5 +66,8 @@
   },
   "files": [
     "lib"
-  ]
+  ],
+  "eslintConfig": {
+    "extends": "airbnb"
+  }
 }

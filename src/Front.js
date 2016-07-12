@@ -1,9 +1,6 @@
+import React from 'react';
 import CardSide from './CardSide';
 
-class Front extends CardSide {
-  getClassName () {
-    return 'card-front';
-  }
-}
+const Front = props => <CardSide {...props} className="card-front" />;
 
 export default Front;
