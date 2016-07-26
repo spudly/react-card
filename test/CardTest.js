@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '../src/Card';
 import Front from '../src/Front';
 import Back from '../src/Back';
-import { strictEqual } from 'assert';
+import {strictEqual} from 'assert';
 import ReactDOM from 'react-dom/server';
 
 export default {

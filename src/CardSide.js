@@ -1,6 +1,6 @@
-import React, { PropTypes } from 'react';
+import React, {PropTypes} from 'react';
 
-const CardSide = ({ className, children }) => (
+const CardSide = ({className, children}) => (
   <div className={className}>{children}</div>
 );
 

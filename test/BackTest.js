@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/server';
 import Back from '../src/Back';
-import { strictEqual } from 'assert';
+import {strictEqual} from 'assert';
 
 export default {
 
