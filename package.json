@@ -16,7 +16,7 @@
     "browserify": "^13.0.1",
     "cssnext": "^1.8.0",
     "index-card.css": "^1.0.1",
-    "mocha": "^2.2.5",
+    "mocha": "^3.0.1",
     "nyc": "^7.0.0",
     "postcss-cli": "^2.5.2",
     "postcss-import": "^8.1.2",
