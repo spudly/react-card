@@ -1,8 +1,8 @@
-import React from 'react';
+import {strictEqual} from 'assert';
+import Back from '../src/Back';
 import Card from '../src/Card';
 import Front from '../src/Front';
-import Back from '../src/Back';
-import {strictEqual} from 'assert';
+import React from 'react';
 import ReactDOM from 'react-dom/server';
 
 export default {

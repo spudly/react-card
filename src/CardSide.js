@@ -4,6 +4,8 @@ const CardSide = ({className, children}) => (
   <div className={className}>{children}</div>
 );
 
+CardSide.displayName = 'CardSide';
+
 CardSide.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
