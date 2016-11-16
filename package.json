@@ -3,7 +3,7 @@
   "description": "Render a card with React",
   "main": "lib/Card.js",
   "peerDependencies": {
-    "react": "^15.2.1"
+    "react": "^15.4.0"
   },
   "devDependencies": {
     "@spudly/eslint-config": "^3.0.0",
