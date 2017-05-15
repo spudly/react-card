@@ -19,7 +19,7 @@
     "mocha": "^3.0.2",
     "nyc": "^8.1.0",
     "postcss-cli": "^4.0.0",
-    "postcss-import": "^9.0.0",
+    "postcss-import": "^10.0.0",
     "postcss-nested": "^2.0.0",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
