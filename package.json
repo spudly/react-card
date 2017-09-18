@@ -23,7 +23,7 @@
     "postcss-nested": "^2.0.0",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
-    "semantic-release": "^7.0.1"
+    "semantic-release": "^8.0.0"
   },
   "babel": {
     "presets": [
