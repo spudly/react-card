@@ -22,7 +22,7 @@
     "postcss-import": "^11.0.0",
     "postcss-nested": "^2.0.0",
     "react": "^15.2.1",
-    "react-dom": "^15.2.1",
+    "react-dom": "^16.0.0",
     "semantic-release": "^8.0.0"
   },
   "babel": {
