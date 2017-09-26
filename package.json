@@ -21,7 +21,7 @@
     "postcss-cli": "^4.0.0",
     "postcss-import": "^11.0.0",
     "postcss-nested": "^2.0.0",
-    "react": "^15.2.1",
+    "react": "^16.0.0",
     "react-dom": "^15.2.1",
     "semantic-release": "^8.0.0"
   },
